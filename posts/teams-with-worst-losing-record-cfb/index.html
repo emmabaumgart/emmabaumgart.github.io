@@ -9,7 +9,7 @@
 <meta name="author" content="Emma Baumgart">
 <meta name="dcterms.date" content="2025-11-17">
 
-<title>Despite the hype, the majority of the Big Ten is mediocre – Emma Baumgart’s Sports Site</title>
+<title>Don’t tell the Big Ten, but their conference is mediocre – Emma Baumgart’s Sports Site</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -154,7 +154,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Despite the hype, the majority of the Big Ten is mediocre</h1>
+      <h1 class="title">Don’t tell the Big Ten, but their conference is mediocre</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">college</div>
                 <div class="quarto-category">football</div>
@@ -195,7 +195,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>The Big Ten has money, fans and coverage, but in the past decade they haven’t had depth. Save for Ohio State, Michigan and occasionally Penn State; no other Big Ten team consistently does anything special throughout the fall. The middle and lower tiers of the conference have struggled to stay competitive, often cycling through coaches, rebuilding phases and less than impressive seasons. As a result, the conference’s reputation has leaned heavily on a small handful of elite programs who disguise the true mediocrity of the Big Ten.</p>
+<p>The Big Ten has money, fans and coverage, but in the past decade they haven’t had depth. Save for Ohio State, Michigan and occasionally Penn State; no other Big Ten team consistently does anything special throughout the fall. The middle and lower tiers of the conference have struggled to stay competitive, often cycling through coaches, rebuilding phases and less than impressive seasons. As a result, the conference’s reputation has leaned heavily on a select few elite programs who disguise the true mediocrity of the Big Ten.</p>
+<p>Since 2014, the Power Four conferences have recorded 260 losing-season streaks across all FBS teams. If those seasons were split evenly among the four conferences, each of them would account for 65 of the 260 losing seasons. However, the Big Ten accounts for 68 of those seasons. They’re not significantly higher or lower, highlighting a decade of pretty average, middle of the pack football.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -261,7 +262,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>() <span class="sc">+</span></span>
 <span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> records, <span class="fu">aes</span>(<span class="at">x =</span> SOS, <span class="at">y =</span> SRS), <span class="at">color=</span><span class="st">"grey"</span>) <span class="sc">+</span> </span>
 <span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data=</span>loserseasons, <span class="fu">aes</span>(<span class="at">x =</span> SOS, <span class="at">y =</span> SRS), <span class="at">color=</span><span class="st">"orange"</span>) <span class="sc">+</span></span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data=</span>big10loser, <span class="fu">aes</span>(<span class="at">x =</span> SOS, <span class="at">y =</span> SRS), <span class="at">color=</span><span class="st">"blue"</span>) <span class="sc">+</span></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data=</span>big10loser, <span class="fu">aes</span>(<span class="at">x =</span> SOS, <span class="at">y =</span> SRS), <span class="at">color=</span><span class="st">"#0088CE"</span>) <span class="sc">+</span></span>
 <span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">data =</span> records, <span class="fu">aes</span>(<span class="at">x =</span> SOS, <span class="at">y =</span> SRS), <span class="at">method=</span><span class="st">"lm"</span>, <span class="at">se=</span><span class="cn">FALSE</span>) <span class="sc">+</span></span>
 <span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">data=</span>bad, <span class="fu">aes</span>(<span class="at">x =</span> SOS, <span class="at">y =</span> SRS), <span class="at">color=</span><span class="st">"red"</span>) <span class="sc">+</span>  </span>
 <span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>(<span class="at">data=</span>bad, <span class="fu">aes</span>(<span class="at">x=</span>SOS, <span class="at">y=</span>SRS, <span class="at">label=</span>TeamSeason)) <span class="sc">+</span></span>
@@ -271,7 +272,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>    <span class="at">x=</span><span class="st">"Strength of Schedule"</span>, </span>
 <span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">"Simple Rating System"</span>, </span>
 <span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>    <span class="at">title=</span><span class="st">"Big Ten football remains average"</span>, </span>
-<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"The grey dots show every FBS season since 2014. Of the 260 Power Four teams with losing-season streaks </span><span class="sc">\n</span><span class="st">(orange) each conference would account for 65. Big Ten teams with losing-season streaks (blue) come in at 68, </span><span class="sc">\n</span><span class="st">highlighting a decade of pretty average, middle of the pack football."</span>,</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle=</span><span class="st">"The grey dots represent every FBS season since 2014, while the orange dots highlight Power Four teams with losing </span><span class="sc">\n</span><span class="st">season streaks and the blue show the Big Ten teams with losing season streaks."</span>,</span>
 <span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>    <span class="at">caption=</span><span class="st">"Source: Sports Reference | By Emma Baumgart"</span></span>
 <span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
 <span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span> </span>
@@ -291,8 +292,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<p>Looking at every team over the past decade can make it hard to notice just how unremarkable most of the Big Ten has been, but narrowing the focus to the 24 programs with the longest losing records over that span makes the picture clearer. The Big Ten accounts for nine of those 24 teams and holds five of the longest losing-season streaks. They trailing only Vanderbilt and Kansas which aren’t programs Big Ten teams should be happy about being grouped with, as they are a conference that prides itself on a long history of success.</p>
-<p>Before the conference realignment, this would mean over half of the Big Ten had a losing record within the decade. Now, even with the conference expanding, it means that half of its teams appear on the list.</p>
+<p>Looking at every team over the past decade can make it hard to notice just how unremarkable most of the Big Ten has been, but narrowing the focus to the 24 programs with the longest losing records over that span makes the picture clearer. The Big Ten accounts for nine of those 24 teams and holds five of the longest losing-season streaks, only Vanderbilt and Kansas have longer. Keeping company with some of the worst teams in FBS is not in line with the prestigious image the Big Ten tries to portray.</p>
+<p>Before the conference realignment in 2024, this would mean over half of the Big Ten had a losing record within the decade. Now, even with the conference expanding in 2024, it means that half of its teams appear on the list.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -312,53 +313,54 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>loserstable <span class="sc">|&gt;</span> </span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_label</span>(</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">Conf =</span> <span class="st">"Conference"</span>,</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="st">"Losing Seasons"</span>,</span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_wins=</span> <span class="st">"Average Wins"</span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_header</span>(</span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Losing tradition? Big Ten overrepresented among struggling programs"</span>,</span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"The Big Ten contributes nine teams to the top 24 teams with a losing record, that means half of the Big Ten has long standing losing streaks."</span></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_style</span>(</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">weight =</span> <span class="st">"bold"</span>, <span class="at">align =</span> <span class="st">"left"</span>),</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_title</span>(<span class="st">"title"</span>)</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_style</span>(</span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">align =</span> <span class="st">"left"</span>),</span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_title</span>(<span class="st">"subtitle"</span>)</span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_source_note</span>(</span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>    <span class="at">source_note =</span> <span class="fu">md</span>(<span class="st">"**By:** Emma Baumgart | **Source:** Sports Reference"</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_style</span>(</span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">list</span>(</span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>      <span class="fu">cell_fill</span>(<span class="at">color =</span> <span class="st">"red"</span>),</span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>      <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"white"</span>)</span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>      ),</span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_body</span>(</span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>      <span class="at">rows =</span> Conf <span class="sc">==</span> <span class="st">"Big Ten"</span>)</span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n)) <span class="sc">|&gt;</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cols_label</span>(</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">Conf =</span> <span class="st">"Conference"</span>,</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="st">"Losing Seasons"</span>,</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">avg_wins=</span> <span class="st">"Average Wins"</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_header</span>(</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Losing tradition? Big Ten overrepresented among struggling programs"</span>,</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">subtitle =</span> <span class="st">"The Big Ten contributes nine teams to the top 24 teams with a losing record, that means half of the Big Ten has long standing losing streaks."</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_style</span>(</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">weight =</span> <span class="st">"bold"</span>, <span class="at">align =</span> <span class="st">"left"</span>),</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_title</span>(<span class="st">"title"</span>)</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_style</span>(</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">align =</span> <span class="st">"left"</span>),</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_title</span>(<span class="st">"subtitle"</span>)</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_source_note</span>(</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>    <span class="at">source_note =</span> <span class="fu">md</span>(<span class="st">"**By:** Emma Baumgart | **Source:** Sports Reference"</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_style</span>(</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>    <span class="at">style =</span> <span class="fu">list</span>(</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>      <span class="fu">cell_fill</span>(<span class="at">color =</span> <span class="st">"red"</span>),</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>      <span class="fu">cell_text</span>(<span class="at">color =</span> <span class="st">"white"</span>)</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>      ),</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">locations =</span> <span class="fu">cells_body</span>(</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>      <span class="at">rows =</span> Conf <span class="sc">==</span> <span class="st">"Big Ten"</span>)</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="slnpuypmnj" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#slnpuypmnj table {
+<div id="vmmxryskfk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#vmmxryskfk table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#slnpuypmnj thead, #slnpuypmnj tbody, #slnpuypmnj tfoot, #slnpuypmnj tr, #slnpuypmnj td, #slnpuypmnj th {
+#vmmxryskfk thead, #vmmxryskfk tbody, #vmmxryskfk tfoot, #vmmxryskfk tr, #vmmxryskfk td, #vmmxryskfk th {
   border-style: none;
 }
 
-#slnpuypmnj p {
+#vmmxryskfk p {
   margin: 0;
   padding: 0;
 }
 
-#slnpuypmnj .gt_table {
+#vmmxryskfk .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -384,12 +386,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#slnpuypmnj .gt_caption {
+#vmmxryskfk .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#slnpuypmnj .gt_title {
+#vmmxryskfk .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -401,7 +403,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#slnpuypmnj .gt_subtitle {
+#vmmxryskfk .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -413,7 +415,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#slnpuypmnj .gt_heading {
+#vmmxryskfk .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -425,13 +427,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#slnpuypmnj .gt_bottom_border {
+#vmmxryskfk .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#slnpuypmnj .gt_col_headings {
+#vmmxryskfk .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -446,7 +448,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#slnpuypmnj .gt_col_heading {
+#vmmxryskfk .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -466,7 +468,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#slnpuypmnj .gt_column_spanner_outer {
+#vmmxryskfk .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -478,15 +480,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#slnpuypmnj .gt_column_spanner_outer:first-child {
+#vmmxryskfk .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#slnpuypmnj .gt_column_spanner_outer:last-child {
+#vmmxryskfk .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#slnpuypmnj .gt_column_spanner {
+#vmmxryskfk .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -498,11 +500,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#slnpuypmnj .gt_spanner_row {
+#vmmxryskfk .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#slnpuypmnj .gt_group_heading {
+#vmmxryskfk .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -528,7 +530,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#slnpuypmnj .gt_empty_group_heading {
+#vmmxryskfk .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -543,15 +545,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#slnpuypmnj .gt_from_md > :first-child {
+#vmmxryskfk .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#slnpuypmnj .gt_from_md > :last-child {
+#vmmxryskfk .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#slnpuypmnj .gt_row {
+#vmmxryskfk .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -570,7 +572,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#slnpuypmnj .gt_stub {
+#vmmxryskfk .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -583,7 +585,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#slnpuypmnj .gt_stub_row_group {
+#vmmxryskfk .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -597,15 +599,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#slnpuypmnj .gt_row_group_first td {
+#vmmxryskfk .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#slnpuypmnj .gt_row_group_first th {
+#vmmxryskfk .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#slnpuypmnj .gt_summary_row {
+#vmmxryskfk .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -615,16 +617,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#slnpuypmnj .gt_first_summary_row {
+#vmmxryskfk .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#slnpuypmnj .gt_first_summary_row.thick {
+#vmmxryskfk .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#slnpuypmnj .gt_last_summary_row {
+#vmmxryskfk .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -634,7 +636,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#slnpuypmnj .gt_grand_summary_row {
+#vmmxryskfk .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -644,7 +646,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#slnpuypmnj .gt_first_grand_summary_row {
+#vmmxryskfk .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -654,7 +656,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#slnpuypmnj .gt_last_grand_summary_row_top {
+#vmmxryskfk .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -664,11 +666,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#slnpuypmnj .gt_striped {
+#vmmxryskfk .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#slnpuypmnj .gt_table_body {
+#vmmxryskfk .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -677,7 +679,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#slnpuypmnj .gt_footnotes {
+#vmmxryskfk .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -691,7 +693,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#slnpuypmnj .gt_footnote {
+#vmmxryskfk .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -700,7 +702,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#slnpuypmnj .gt_sourcenotes {
+#vmmxryskfk .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -714,7 +716,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#slnpuypmnj .gt_sourcenote {
+#vmmxryskfk .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -722,72 +724,72 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#slnpuypmnj .gt_left {
+#vmmxryskfk .gt_left {
   text-align: left;
 }
 
-#slnpuypmnj .gt_center {
+#vmmxryskfk .gt_center {
   text-align: center;
 }
 
-#slnpuypmnj .gt_right {
+#vmmxryskfk .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#slnpuypmnj .gt_font_normal {
+#vmmxryskfk .gt_font_normal {
   font-weight: normal;
 }
 
-#slnpuypmnj .gt_font_bold {
+#vmmxryskfk .gt_font_bold {
   font-weight: bold;
 }
 
-#slnpuypmnj .gt_font_italic {
+#vmmxryskfk .gt_font_italic {
   font-style: italic;
 }
 
-#slnpuypmnj .gt_super {
+#vmmxryskfk .gt_super {
   font-size: 65%;
 }
 
-#slnpuypmnj .gt_footnote_marks {
+#vmmxryskfk .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#slnpuypmnj .gt_asterisk {
+#vmmxryskfk .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#slnpuypmnj .gt_indent_1 {
+#vmmxryskfk .gt_indent_1 {
   text-indent: 5px;
 }
 
-#slnpuypmnj .gt_indent_2 {
+#vmmxryskfk .gt_indent_2 {
   text-indent: 10px;
 }
 
-#slnpuypmnj .gt_indent_3 {
+#vmmxryskfk .gt_indent_3 {
   text-indent: 15px;
 }
 
-#slnpuypmnj .gt_indent_4 {
+#vmmxryskfk .gt_indent_4 {
   text-indent: 20px;
 }
 
-#slnpuypmnj .gt_indent_5 {
+#vmmxryskfk .gt_indent_5 {
   text-indent: 25px;
 }
 
-#slnpuypmnj .katex-display {
+#vmmxryskfk .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#slnpuypmnj div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#vmmxryskfk div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -809,28 +811,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody class="gt_table_body">
 <tr class="odd">
-<td class="gt_row gt_left" headers="School">Arkansas</td>
-<td class="gt_row gt_left" headers="Conf">SEC</td>
-<td class="gt_row gt_right" headers="n">5</td>
-<td class="gt_row gt_right" headers="avg_wins">3.0</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="School">Auburn</td>
-<td class="gt_row gt_left" headers="Conf">SEC</td>
-<td class="gt_row gt_right" headers="n">4</td>
-<td class="gt_row gt_right" headers="avg_wins">5.5</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="School">Baylor</td>
+<td class="gt_row gt_left" headers="School">Kansas</td>
 <td class="gt_row gt_left" headers="Conf">Big 12</td>
-<td class="gt_row gt_right" headers="n">4</td>
-<td class="gt_row gt_right" headers="avg_wins">3.0</td>
+<td class="gt_row gt_right" headers="n">10</td>
+<td class="gt_row gt_right" headers="avg_wins">2.5</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="School">Florida</td>
+<td class="gt_row gt_left" headers="School">Vanderbilt</td>
 <td class="gt_row gt_left" headers="Conf">SEC</td>
-<td class="gt_row gt_right" headers="n">4</td>
-<td class="gt_row gt_right" headers="avg_wins">5.2</td>
+<td class="gt_row gt_right" headers="n">10</td>
+<td class="gt_row gt_right" headers="avg_wins">3.6</td>
 </tr>
 <tr class="odd">
 <td class="gt_row gt_left" headers="School" style="background-color: #FF0000; color: #FFFFFF">Illinois</td>
@@ -845,22 +835,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="avg_wins" style="background-color: #FF0000; color: #FFFFFF">4.4</td>
 </tr>
 <tr class="odd">
-<td class="gt_row gt_left" headers="School">Iowa State</td>
-<td class="gt_row gt_left" headers="Conf">Big 12</td>
-<td class="gt_row gt_right" headers="n">4</td>
-<td class="gt_row gt_right" headers="avg_wins">3.0</td>
+<td class="gt_row gt_left" headers="School" style="background-color: #FF0000; color: #FFFFFF">Nebraska</td>
+<td class="gt_row gt_left" headers="Conf" style="background-color: #FF0000; color: #FFFFFF">Big Ten</td>
+<td class="gt_row gt_right" headers="n" style="background-color: #FF0000; color: #FFFFFF">8</td>
+<td class="gt_row gt_right" headers="avg_wins" style="background-color: #FF0000; color: #FFFFFF">4.2</td>
 </tr>
 <tr class="even">
-<td class="gt_row gt_left" headers="School">Kansas</td>
-<td class="gt_row gt_left" headers="Conf">Big 12</td>
-<td class="gt_row gt_right" headers="n">10</td>
-<td class="gt_row gt_right" headers="avg_wins">2.5</td>
+<td class="gt_row gt_left" headers="School" style="background-color: #FF0000; color: #FFFFFF">Purdue</td>
+<td class="gt_row gt_left" headers="Conf" style="background-color: #FF0000; color: #FFFFFF">Big Ten</td>
+<td class="gt_row gt_right" headers="n" style="background-color: #FF0000; color: #FFFFFF">8</td>
+<td class="gt_row gt_right" headers="avg_wins" style="background-color: #FF0000; color: #FFFFFF">3.1</td>
 </tr>
 <tr class="odd">
-<td class="gt_row gt_left" headers="School">Kentucky</td>
-<td class="gt_row gt_left" headers="Conf">SEC</td>
-<td class="gt_row gt_right" headers="n">4</td>
-<td class="gt_row gt_right" headers="avg_wins">4.8</td>
+<td class="gt_row gt_left" headers="School" style="background-color: #FF0000; color: #FFFFFF">Rutgers</td>
+<td class="gt_row gt_left" headers="Conf" style="background-color: #FF0000; color: #FFFFFF">Big Ten</td>
+<td class="gt_row gt_right" headers="n" style="background-color: #FF0000; color: #FFFFFF">8</td>
+<td class="gt_row gt_right" headers="avg_wins" style="background-color: #FF0000; color: #FFFFFF">3.1</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="School" style="background-color: #FF0000; color: #FFFFFF">Maryland</td>
@@ -869,10 +859,70 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="avg_wins" style="background-color: #FF0000; color: #FFFFFF">3.9</td>
 </tr>
 <tr class="odd">
+<td class="gt_row gt_left" headers="School">Texas Tech</td>
+<td class="gt_row gt_left" headers="Conf">Big 12</td>
+<td class="gt_row gt_right" headers="n">6</td>
+<td class="gt_row gt_right" headers="avg_wins">4.7</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="School">Arkansas</td>
+<td class="gt_row gt_left" headers="Conf">SEC</td>
+<td class="gt_row gt_right" headers="n">5</td>
+<td class="gt_row gt_right" headers="avg_wins">3.0</td>
+</tr>
+<tr class="odd">
 <td class="gt_row gt_left" headers="School" style="background-color: #FF0000; color: #FFFFFF">Michigan State</td>
 <td class="gt_row gt_left" headers="Conf" style="background-color: #FF0000; color: #FFFFFF">Big Ten</td>
 <td class="gt_row gt_right" headers="n" style="background-color: #FF0000; color: #FFFFFF">5</td>
 <td class="gt_row gt_right" headers="avg_wins" style="background-color: #FF0000; color: #FFFFFF">3.8</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="School">Mississippi State</td>
+<td class="gt_row gt_left" headers="Conf">SEC</td>
+<td class="gt_row gt_right" headers="n">5</td>
+<td class="gt_row gt_right" headers="avg_wins">4.6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="School" style="background-color: #FF0000; color: #FFFFFF">Northwestern</td>
+<td class="gt_row gt_left" headers="Conf" style="background-color: #FF0000; color: #FFFFFF">Big Ten</td>
+<td class="gt_row gt_right" headers="n" style="background-color: #FF0000; color: #FFFFFF">5</td>
+<td class="gt_row gt_right" headers="avg_wins" style="background-color: #FF0000; color: #FFFFFF">3.2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="School">South Carolina</td>
+<td class="gt_row gt_left" headers="Conf">SEC</td>
+<td class="gt_row gt_right" headers="n">5</td>
+<td class="gt_row gt_right" headers="avg_wins">4.0</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="School">Auburn</td>
+<td class="gt_row gt_left" headers="Conf">SEC</td>
+<td class="gt_row gt_right" headers="n">4</td>
+<td class="gt_row gt_right" headers="avg_wins">5.5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="School">Baylor</td>
+<td class="gt_row gt_left" headers="Conf">Big 12</td>
+<td class="gt_row gt_right" headers="n">4</td>
+<td class="gt_row gt_right" headers="avg_wins">3.0</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="School">Florida</td>
+<td class="gt_row gt_left" headers="Conf">SEC</td>
+<td class="gt_row gt_right" headers="n">4</td>
+<td class="gt_row gt_right" headers="avg_wins">5.2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="School">Iowa State</td>
+<td class="gt_row gt_left" headers="Conf">Big 12</td>
+<td class="gt_row gt_right" headers="n">4</td>
+<td class="gt_row gt_right" headers="avg_wins">3.0</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="School">Kentucky</td>
+<td class="gt_row gt_left" headers="Conf">SEC</td>
+<td class="gt_row gt_right" headers="n">4</td>
+<td class="gt_row gt_right" headers="avg_wins">4.8</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="School" style="background-color: #FF0000; color: #FFFFFF">Minnesota</td>
@@ -881,46 +931,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_right" headers="avg_wins" style="background-color: #FF0000; color: #FFFFFF">5.0</td>
 </tr>
 <tr class="odd">
-<td class="gt_row gt_left" headers="School">Mississippi State</td>
-<td class="gt_row gt_left" headers="Conf">SEC</td>
-<td class="gt_row gt_right" headers="n">5</td>
-<td class="gt_row gt_right" headers="avg_wins">4.6</td>
-</tr>
-<tr class="even">
 <td class="gt_row gt_left" headers="School">Missouri</td>
 <td class="gt_row gt_left" headers="Conf">SEC</td>
 <td class="gt_row gt_right" headers="n">4</td>
 <td class="gt_row gt_right" headers="avg_wins">5.2</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="School" style="background-color: #FF0000; color: #FFFFFF">Nebraska</td>
-<td class="gt_row gt_left" headers="Conf" style="background-color: #FF0000; color: #FFFFFF">Big Ten</td>
-<td class="gt_row gt_right" headers="n" style="background-color: #FF0000; color: #FFFFFF">8</td>
-<td class="gt_row gt_right" headers="avg_wins" style="background-color: #FF0000; color: #FFFFFF">4.2</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="School" style="background-color: #FF0000; color: #FFFFFF">Northwestern</td>
-<td class="gt_row gt_left" headers="Conf" style="background-color: #FF0000; color: #FFFFFF">Big Ten</td>
-<td class="gt_row gt_right" headers="n" style="background-color: #FF0000; color: #FFFFFF">5</td>
-<td class="gt_row gt_right" headers="avg_wins" style="background-color: #FF0000; color: #FFFFFF">3.2</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="School" style="background-color: #FF0000; color: #FFFFFF">Purdue</td>
-<td class="gt_row gt_left" headers="Conf" style="background-color: #FF0000; color: #FFFFFF">Big Ten</td>
-<td class="gt_row gt_right" headers="n" style="background-color: #FF0000; color: #FFFFFF">8</td>
-<td class="gt_row gt_right" headers="avg_wins" style="background-color: #FF0000; color: #FFFFFF">3.1</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="School" style="background-color: #FF0000; color: #FFFFFF">Rutgers</td>
-<td class="gt_row gt_left" headers="Conf" style="background-color: #FF0000; color: #FFFFFF">Big Ten</td>
-<td class="gt_row gt_right" headers="n" style="background-color: #FF0000; color: #FFFFFF">8</td>
-<td class="gt_row gt_right" headers="avg_wins" style="background-color: #FF0000; color: #FFFFFF">3.1</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="School">South Carolina</td>
-<td class="gt_row gt_left" headers="Conf">SEC</td>
-<td class="gt_row gt_right" headers="n">5</td>
-<td class="gt_row gt_right" headers="avg_wins">4.0</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="School">Texas</td>
@@ -933,18 +947,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td class="gt_row gt_left" headers="Conf">Big 12</td>
 <td class="gt_row gt_right" headers="n">4</td>
 <td class="gt_row gt_right" headers="avg_wins">5.2</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="School">Texas Tech</td>
-<td class="gt_row gt_left" headers="Conf">Big 12</td>
-<td class="gt_row gt_right" headers="n">6</td>
-<td class="gt_row gt_right" headers="avg_wins">4.7</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="School">Vanderbilt</td>
-<td class="gt_row gt_left" headers="Conf">SEC</td>
-<td class="gt_row gt_right" headers="n">10</td>
-<td class="gt_row gt_right" headers="avg_wins">3.6</td>
 </tr>
 <tr class="even">
 <td class="gt_row gt_left" headers="School">West Virginia</td>
